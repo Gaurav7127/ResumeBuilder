@@ -1,0 +1,164 @@
+/* Main App Styling */
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+    background: transparent;
+}
+
+/* Header Styling */
+.title-container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.title-text {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+/* Input Sections */
+.stTextInput>div>div>input,
+.stTextArea>div>div>textarea {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: rgb(0, 0, 0) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+}
+
+.stButton>button {
+    background: linear-gradient(45deg, #00c6ff 0%, #0072ff 100%);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+    background-color: rgba(15, 12, 41, 0.95);
+}
+
+/* Card & Paper Preview Styling */
+.resume-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.paper-preview {
+    background: white !important;
+    color: #1a1a1a !important;
+    padding: 40px 50px !important;
+    border-radius: 4px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    min-height: 800px;
+    margin: 20px auto;
+    max-width: 850px;
+    font-family: 'Inter', 'Segoe UI', serif !important;
+    line-height: 1.5;
+}
+
+/* Custom Typography for Paper Preview - Sebastian Bennett Style */
+.paper-preview h1 {
+    color: #000 !important;
+    text-align: center;
+    font-size: 2.8rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 0.1rem !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Professional Headline */
+.paper-preview h1+p {
+    text-align: center !important;
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    color: #333 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    letter-spacing: 1px;
+}
+
+/* Contact Info Line */
+.paper-preview h1+p+p {
+    text-align: center !important;
+    font-size: 0.85rem !important;
+    color: #666 !important;
+    margin-top: 0 !important;
+    margin-bottom: 2rem !important;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.paper-preview h2 {
+    color: #000 !important;
+    font-size: 1.1rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 2rem !important;
+    margin-bottom: 0.5rem !important;
+    border-bottom: 1px solid #000 !important;
+    padding-bottom: 5px !important;
+}
+
+.paper-preview h3 {
+    color: #000 !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    margin-top: 0.8rem !important;
+    margin-bottom: 0.3rem !important;
+}
+
+.paper-preview p,
+.paper-preview li {
+    font-size: 0.95rem !important;
+    color: #333 !important;
+    line-height: 1.6;
+}
+
+.paper-preview ul {
+    margin-bottom: 1rem !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
